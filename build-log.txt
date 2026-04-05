@@ -1,0 +1,39 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 498B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/continuumio/miniconda3:latest
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/continuumio/miniconda3:latest@sha256:b002473017c77d4b8bad6f8c49747e0298c37419a5ec69ca37ebe36d09ee417a
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 25B done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY 1.sh /app/1.sh
+#7 CACHED
+
+#8 [4/5] RUN chmod +x /app/1.sh
+#8 CACHED
+
+#9 [5/5] RUN pip install --no-cache-dir mlflow boto3 pymysql
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 writing image sha256:8f7c31cebdbf312cfebda4393e82784b57afa43b90a3458f02bba97816abd377 done
+#10 naming to docker.io/library/netology-ml:netology-ml done
+#10 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9jd8psgse8d26fiel4vtlcxg5
